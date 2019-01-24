@@ -20,6 +20,7 @@ def _get_cors():
                 if prco[1] == "anime":
                     if int(prco[2]) not in ani_ids:
                         print(f"https://myanimelist.net/anime/{prco[2]}")
+						unwatched.write(f"https://myanimelist.net/anime/{prco[2]}")
         except AttributeError:
             pass
     unwatched.close()
